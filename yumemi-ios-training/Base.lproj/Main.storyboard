@@ -20,7 +20,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="deg-oV-3YO">
                                 <rect key="frame" x="103.5" y="332.5" width="207" height="231"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="5" verticalCompressionResistancePriority="5" image="Rainy" translatesAutoresizingMaskIntoConstraints="NO" id="cFn-ww-yL8">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="5" verticalCompressionResistancePriority="5" translatesAutoresizingMaskIntoConstraints="NO" id="cFn-ww-yL8">
                                         <rect key="frame" x="0.0" y="0.0" width="207" height="207"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="cFn-ww-yL8" secondAttribute="height" multiplier="1:1" id="Prz-Wi-vOb"/>
@@ -77,7 +77,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Rainy" width="48" height="48"/>
         <namedColor name="Blue">
             <color red="0.20499999821186066" green="0.53700000047683716" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
