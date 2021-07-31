@@ -56,6 +56,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIJ-bs-KV9">
                                 <rect key="frame" x="235.5" y="643.5" width="47" height="30"/>
                                 <state key="normal" title="Reload"/>
+                                <connections>
+                                    <action selector="reloadWeatherIcon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8x-1x-qQD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -70,6 +73,9 @@
                             <constraint firstItem="bvy-Js-sJE" firstAttribute="top" secondItem="deg-oV-3YO" secondAttribute="bottom" constant="80" id="yCG-XZ-ml6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="weatherImage" destination="cFn-ww-yL8" id="YoI-Ux-KoG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
