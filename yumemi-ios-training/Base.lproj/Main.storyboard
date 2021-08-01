@@ -74,7 +74,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="weatherImage" destination="cFn-ww-yL8" id="YoI-Ux-KoG"/>
+                        <outlet property="weatherIcon" destination="cFn-ww-yL8" id="PKQ-MX-1V7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
