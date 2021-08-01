@@ -18,6 +18,7 @@
 		FA86630126B562ED009CA51A /* YumemiWeather in Frameworks */ = {isa = PBXBuildFile; productRef = FA86630026B562ED009CA51A /* YumemiWeather */; };
 		FA86630226B57156009CA51A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8662D526B55F98009CA51A /* Main.storyboard */; };
 		FA86630326B57156009CA51A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8662D526B55F98009CA51A /* Main.storyboard */; };
+		FA86630526B6903C009CA51A /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86630426B6903C009CA51A /* WeatherInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		FA8662ED26B55F9A009CA51A /* yumemi-ios-trainingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yumemi-ios-trainingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8662F126B55F9A009CA51A /* yumemi_ios_trainingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yumemi_ios_trainingUITests.swift; sourceTree = "<group>"; };
 		FA8662F326B55F9A009CA51A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA86630426B6903C009CA51A /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				FA8662D826B55F99009CA51A /* Assets.xcassets */,
 				FA8662DA26B55F99009CA51A /* LaunchScreen.storyboard */,
 				FA8662DD26B55F99009CA51A /* Info.plist */,
+				FA86630426B6903C009CA51A /* WeatherInfo.swift */,
 			);
 			path = "yumemi-ios-training";
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA86630526B6903C009CA51A /* WeatherInfo.swift in Sources */,
 				FA8662D426B55F98009CA51A /* ViewController.swift in Sources */,
 				FA8662D026B55F98009CA51A /* AppDelegate.swift in Sources */,
 				FA8662D226B55F98009CA51A /* SceneDelegate.swift in Sources */,

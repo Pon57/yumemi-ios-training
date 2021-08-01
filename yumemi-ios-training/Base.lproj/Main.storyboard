@@ -57,7 +57,7 @@
                                 <rect key="frame" x="235.5" y="643.5" width="47" height="30"/>
                                 <state key="normal" title="Reload"/>
                                 <connections>
-                                    <action selector="reloadWeatherIcon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8x-1x-qQD"/>
+                                    <action selector="reload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kwo-cd-X2B"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -74,6 +74,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="maxTemp" destination="KA6-7I-7gg" id="drM-rs-KsS"/>
+                        <outlet property="minTemp" destination="68a-iO-utS" id="fKC-C5-rC3"/>
                         <outlet property="weatherIcon" destination="cFn-ww-yL8" id="PKQ-MX-1V7"/>
                     </connections>
                 </viewController>
