@@ -12,28 +12,34 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var weatherIcon: UIImageView!
     
+    @IBOutlet weak var maxTemp: UILabel!
+    
+    @IBOutlet weak var minTemp: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func reloadWeatherIcon(_ sender: Any) {
+    @IBAction func reload(_ sender: Any) {
+        let json = """
+        {
+            "area" : "tokyo",
+            "date": "2020-04-01T12:00:00+09:00"
+        }
+        """
+        
         do {
-            let weather: String = try YumemiWeather.fetchWeather(at: "tokyo")
+            let weatherJson: String = try YumemiWeather.fetchWeather(json)
             
-            switch weather {
-            case "sunny":
-                weatherIcon.tintColor = UIColor.red
-                weatherIcon.image = UIImage(named: "Sunny")
-            case "cloudy":
-                weatherIcon.tintColor = UIColor.gray
-                weatherIcon.image = UIImage(named: "Cloudy")
-            case "rainy":
-                weatherIcon.tintColor = UIColor.blue
-                weatherIcon.image = UIImage(named: "Rainy")
-            default:
-                print("ないよ")
-            }
+            let jsonData = weatherJson.data(using: .utf8)
+            
+            let weather = try JSONDecoder().decode(WeatherInfo.self, from: jsonData!)
+            
+            minTemp.text = String(weather.minTemp)
+            maxTemp.text = String(weather.maxTemp)
+            weatherIcon.image = weather.getImage()
+            weatherIcon.tintColor = weather.getTintColor()
         } catch {
             var alertTitle: String = ""
             let alertMessage: String = error.localizedDescription
